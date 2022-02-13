@@ -1,3 +1,13 @@
+import urllib
+
+from bs4 import BeautifulSoup
+import urllib.request
+import requests
+
+from google.cloud import vision
+import io
+
+
 def urls_by_image(path):
     client = vision.ImageAnnotatorClient()
 
